@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "simple keyboard-backups")(type "KiCad")(uri "${KIPRJMOD}/simple keyboard-backups")(options "")(descr ""))
+)
