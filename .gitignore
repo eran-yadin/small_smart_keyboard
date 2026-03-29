@@ -1,4 +1,6 @@
-."simple keyboard-backups"
-"simple keyboard price.xlsx"
-"simple keyboard.csv"
-"simple keyboard.kicad_pcb.zip"
+simple keyboard price.xlsx
+simple keyboard.csv
+export/simple keyboard BOM and cost.xlsx
+simple keyboard.kicad_pcb.zip
+/simple keyboard-backups
+/export

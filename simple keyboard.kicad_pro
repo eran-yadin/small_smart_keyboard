@@ -58,7 +58,28 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "starved_thermal|234975000|30050000|ba8f0409-d6b9-4e2b-a71b-e68c1adc22f4|6f62ef5f-99c1-4b60-841a-853ba226a187|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|236325000|30050000|ba8f0409-d6b9-4e2b-a71b-e68c1adc22f4|e849b5c1-a059-471c-93c4-0cef09a54d50|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|236325000|30050000|ba8f0409-d6b9-4e2b-a71b-e68c1adc22f4|e849b5c1-a059-471c-93c4-0cef09a54d50|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|236325000|36000000|ba8f0409-d6b9-4e2b-a71b-e68c1adc22f4|51fa82da-dd03-49be-8454-1cca0c488176|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|236325000|36000000|ba8f0409-d6b9-4e2b-a71b-e68c1adc22f4|51fa82da-dd03-49be-8454-1cca0c488176|F.Cu",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -521,7 +542,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "export/simple keyboard.step",
       "svg": "",
       "vrml": ""
     },
@@ -602,12 +623,36 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part_num",
+          "name": "Part_num",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Params",
+          "name": "Sim.Params",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
           "show": false
         }
       ],
@@ -646,6 +691,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
